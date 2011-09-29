@@ -1,0 +1,11 @@
+name: ${name}
+main: ${package}.${name}Plugin
+version: ${version}
+depend:
+  # - Permissions
+commands:
+  # foo:
+  #   description: Do something interesting
+  #   usage: |
+  #     Usage: /foo <something>
+  #     Where <something> is an interesting thing to do.
