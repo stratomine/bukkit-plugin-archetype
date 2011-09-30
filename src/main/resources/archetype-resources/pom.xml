@@ -7,8 +7,8 @@
 	<name>${name}</name>
 	<description>A Bukkit plugin</description>
 	<url>https://github.com/username/${artifactId}</url>
+	<inceptionYear>2011</inceptionYear>
 	<version>${version}</version>
-	<packaging>jar</packaging>
 	
 	<repositories>
 		<repository>
@@ -30,4 +30,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<packaging>jar</packaging>
 </project>
