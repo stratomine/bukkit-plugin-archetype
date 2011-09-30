@@ -53,6 +53,17 @@ Your new project will have a tree similar to the following:
 
 You should add a description and URL to `pom.xml`, and customize `plugin.yml` to suit your project.
 
+### Updates
+
+To publish a new version of the archetype, follow these steps:
+
+1. Update the **Bukkit dependency version** in `src/main/resources/archetype-resources/pom.xml`. This is often the latest [recommended build](http://ci.bukkit.org/job/dev-Bukkit/promotion/latest/Recommended/). Specify the version like `0.0.1-r855`.
+2. Update the **archetype version** in the archetype's `pom.xml`. It should correspond with the Bukkit dependency version.
+3. Commit your changes: `git commit -m "bukkit-plugin-archetype 0.0.1-r855"`
+4. Tag your commit: `git tag v0.0.1-r855`
+5. Push your changes to GitHub. (Don't forget to push the tag as well!)
+6. Publish the new archetype version to http://maven.stratomine.com/.
+
 ### License
 
 (The MIT license)
