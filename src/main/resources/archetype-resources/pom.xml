@@ -13,7 +13,7 @@
 	<repositories>
 		<repository>
 			<id>stratomine</id>
-			<url>http://maven.stratomine.com/</url>
+			<url>http://maven.stratomine.com/release</url>
 		</repository>
 	</repositories>
 	
