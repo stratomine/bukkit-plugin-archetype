@@ -65,14 +65,14 @@ You should add a description and URL to `pom.xml`, and customize `plugin.yml` to
 
 ### Updates
 
-To publish a new version of the archetype, follow these steps:
+To deploy a new version of the archetype, follow these steps:
 
 1. Update the **Bukkit dependency version** in `src/main/resources/archetype-resources/pom.xml`. This is often the latest [recommended build](http://ci.bukkit.org/job/dev-Bukkit/promotion/latest/Recommended/). Specify the version like `0.0.1-r855`.
 2. Update the **archetype version** in the archetype's `pom.xml`. It should correspond with the Bukkit dependency version, and add an archetype release version, like `0.0.1-r855-1.0.0`.
 3. Commit your changes: `git commit -m "bukkit-plugin-archetype 0.0.1-r855-1.0.0"`
 4. Tag your commit: `git tag v0.0.1-r855-1.0.0`
 5. Push your changes to GitHub. (Don't forget to push the tag as well!)
-6. Publish the new archetype version to http://maven.stratomine.com/.
+6. Deploy the new archetype version to http://maven.stratomine.com/ using `mvn deploy`.
 
 ### License
 
