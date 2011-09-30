@@ -1,25 +1,57 @@
 Stratomine's Bukkit plugin [Maven archetype](http://maven.apache.org/guides/introduction/introduction-to-archetypes.html) will help you get a plugin project off the ground.
 
-This archetype is versioned in unison with Bukkit, so it is easy to specify which Bukkit release you'd like to build your plugin against.
+This archetype is versioned in unison with Bukkit, so it's easy to specify which Bukkit release you'd like to build your plugin against.
 
 ### Usage
 
 To create a new Bukkit plugin project, use a command like the following:
 
     mvn archetype:generate \
+        -DinteractiveMode=false \
+        -DarchetypeRepository=http://maven.stratomine.com \
         -DarchetypeGroupId=com.stratomine.archetypes \
         -DarchetypeArtifactId=bukkit-plugin-archetype \
         -DarchetypeVersion=0.0.1-r855 \
         -DgroupId=com.stratomine.bukkit.plugins \
-        -DartifactId=bukkit-plugin
+        -DartifactId=bukkit-plugin \
+        -Dname=Plugin
 
-You should customize the following parameters:
+You should customize the following properties:
 
-* `archetypeVersion` -- Corresponds with the Bukkit release to build against.
-* `groupId` -- Your plugin's package.
-* `artifactId` -- Your plugin's name.
+* `archetypeVersion` -- Corresponds with the Bukkit release to build against. (For example, `0.0.1-r855`.)
+* `groupId` -- Your plugin's artifact group. (Often the same as its Java package.)
+* `artifactId` -- Your plugin's project name.
+* `name` -- Your plugin's CamelCase friendly name. (This is used to name Java classes.)
 
-Stratomine projects are namespaced in `com.stratomine.bukkit.plugins`.
+You may also specify these optional properties:
+
+* `version` -- Your plugin's version. (Default: `0.0.1-SNAPSHOT`)
+* `package` -- Your plugin's Java package. (Default: the value of `groupId`)
+
+Alternatively, you may leave out `-DinteractiveMode=false` and let Maven prompt you for values.
+
+#### What's Created
+
+Your new project will have a tree similar to the following:
+
+    bukkit-foo/
+       pom.xml
+       src/
+         main/
+           java/.../
+             FooPlugin.java
+           resources/
+             plugin.yml
+         test/
+           java/.../
+             FooPluginTest.java
+
+* `pom.xml` -- Your plugin's [Project Object Model](http://maven.apache.org/pom.html).
+* `FooPlugin.java` -- Your plugin's main class.
+* `FooPluginTest.java` -- A [JUnit](http://junit.org/) test case ready to test your main class.
+* `plugin.yml` -- A Bukkit [plugin descriptor file](http://wiki.bukkit.org/Plugin_YAML) for your plugin.
+
+You should add a description and URL to `pom.xml`, and customize `plugin.yml` to suit your project.
 
 ### License
 
