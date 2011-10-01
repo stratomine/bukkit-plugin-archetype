@@ -20,7 +20,7 @@ public class ${name}Plugin extends JavaPlugin {
 	}
 	
 	public void log(Level level, String message) {
-		message = "[${name}] " + message;
+		message = "[" + getDescription().getName() + "] " + message;
 		getLogger().log(level, message);
 	}
 	
