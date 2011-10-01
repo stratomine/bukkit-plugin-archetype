@@ -40,6 +40,8 @@ You may also specify these optional properties:
 
 Alternatively, you may leave out `-DinteractiveMode=false` and let Maven prompt you for values.
 
+Stratomine's Maven repository also hosts an [archetype catalog](http://maven.apache.org/archetype/maven-archetype-plugin/specification/archetype-catalog.html). If you use [m2eclipse](http://eclipse.org/m2e/) or a similar tool, you may point it at `http://maven.stratomine.com/release/archetype-catalog.xml` to further streamline your workflow!
+
 #### What's Created
 
 Your new project will have a tree similar to the following:
