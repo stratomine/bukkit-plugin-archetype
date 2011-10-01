@@ -18,7 +18,7 @@ To create a new Bukkit plugin project, use a command like the following:
 
     mvn archetype:generate \
         -DinteractiveMode=false \
-        -DarchetypeRepository=http://maven.stratomine.com \
+        -DarchetypeRepository=http://maven.stratomine.com/release \
         -DarchetypeGroupId=com.stratomine.archetypes \
         -DarchetypeArtifactId=bukkit-plugin-archetype \
         -DarchetypeVersion=0.0.1-r855-1.0.0 \
