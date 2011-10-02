@@ -1,21 +1,14 @@
 package ${package};
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.*;
 
-public class ${name}PluginTest extends TestCase {
+import org.junit.Test;
+
+public class ${name}PluginTest {
 	
-	public ${name}PluginTest(String testName) {
-		super(testName);
-	}
-	
-	public static Test suite() {
-		return new TestSuite(${name}PluginTest.class);
-	}
-	
+	@Test
 	public void testPlugin() {
-		assertTrue(true);
+		fail("Not yet implemented");
 	}
 	
 }
