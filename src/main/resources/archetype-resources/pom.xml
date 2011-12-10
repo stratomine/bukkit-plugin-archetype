@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>0.0.1-r855</version>
+			<version>1.0.0-r1064</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
