@@ -7,8 +7,8 @@
 	<name>Bukkit Plugin Archetype</name>
 	<description>A Maven archetype for a simple Bukkit plugin</description>
 	<inceptionYear>2011</inceptionYear>
-	<version>1.0.0-r1064-1.0.0</version>
-	<url>http://github.com/stratomine/bukkit-plugin-archetype</url>
+	<version>1.0.1-r1-1.0.0</version>
+	<url>https://github.com/stratomine/bukkit-plugin-archetype</url>
 	
 	<organization>
 		<name>Stratomine</name>

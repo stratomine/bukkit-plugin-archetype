@@ -12,8 +12,8 @@
 	
 	<repositories>
 		<repository>
-			<id>stratomine</id>
-			<url>http://maven.stratomine.com/release</url>
+			<id>bukkit</id>
+			<url>http://repo.bukkit.org/content/repositories/releases</url>
 		</repository>
 	</repositories>
 	
@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>1.0.0-r1064</version>
+			<version>1.0.1-r1</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
